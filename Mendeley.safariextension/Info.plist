@@ -15,18 +15,50 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
-	<dict/>
+	<dict>
+		<key>Global Page</key>
+		<string>MendeleyGlobal.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>MendeleyToolbarItem</string>
+				<key>Identifier</key>
+				<string>import</string>
+				<key>Image</key>
+				<string>Button.png</string>
+				<key>Label</key>
+				<string>Mendeley</string>
+				<key>Palette Label</key>
+				<string>Mendeley</string>
+				<key>Tool Tip</key>
+				<string>Import to Mendeley</string>
+			</dict>
+		</array>
+	</dict>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
-		<dict/>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>Inject.js</string>
+			</array>
+		</dict>
 	</dict>
+	<key>Description</key>
+	<string>Integrate Mendeley Research Network into Safari</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
-		<dict/>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
